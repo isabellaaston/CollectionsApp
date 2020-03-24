@@ -1,6 +1,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="normalize.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 <title>My Collection</title>
 </head>
 <body>
@@ -22,7 +23,7 @@ $query=$db->prepare("SELECT* FROM `bags`;");
 $query->execute();
 $result = $query->fetchAll();
 
-
+echo '<div class="bags">';
 foreach ($result as $bag) {
     echo '<div class="item">';
     echo '<h2>';
@@ -46,4 +47,5 @@ foreach ($result as $bag) {
     echo '</ul>';
     echo '</div>';
 };
+echo '</div>';
 ?>
