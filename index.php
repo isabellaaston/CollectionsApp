@@ -9,9 +9,9 @@
 <body>
     <nav>
         <div class="menu">
-            <a>Collection</a>
-            <a>Add Item</a>
-            <a>Edit Item</a>
+            <a class="underline">Collection</a>
+            <a class="underline">Add Item</a>
+            <a class="underline">Edit Item</a>
         </div>
     </nav>
 <main>
