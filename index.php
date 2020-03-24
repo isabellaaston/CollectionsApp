@@ -31,7 +31,9 @@ foreach ($result as $bag) {
     echo $bag['brand'];
     echo '</h2>';
     echo '<br>';
+    echo '<div class="image">';
     echo '<img src="'.$bag['image'].'">';
+    echo '</div>';
     echo '<br>';
     echo '<ul>';
     echo '<li>';

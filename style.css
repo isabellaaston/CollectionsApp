@@ -26,6 +26,10 @@ h1 {
     justify-content: space-evenly;
     padding: 10px 0 20px 0;
 }
+.image {
+    display: flex;
+    justify-content: center;
+} 
 img {
     width: 90%;
 }
@@ -38,7 +42,12 @@ img {
 }
 .item{
     font-family: 'Questrial', sans-serif;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+h2 {
+    padding-left: 5%;
 }
 div {
-    margin: 0;
+    margin: 0 0 10px 0;
 }
