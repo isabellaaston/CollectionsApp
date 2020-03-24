@@ -1,5 +1,7 @@
 body {
     background-color: #FFFFFF;
+    margin: 0;
+	padding: 0;
 }
 .underline {
     border-bottom: 2px, solid, #FFFFFF;

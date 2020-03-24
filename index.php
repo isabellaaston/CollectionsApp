@@ -25,11 +25,11 @@ $result = $query->fetchAll();
 
 foreach ($result as $bag) {
     echo '<div class="item">';
-    echo '<img src="'.$bag['image'].'">';
-    echo '<br>';
     echo '<h2>';
     echo $bag['brand'];
     echo '</h2>';
+    echo '<br>';
+    echo '<img src="'.$bag['image'].'">';
     echo '<br>';
     echo '<ul>';
     echo '<li>';
@@ -37,7 +37,7 @@ foreach ($result as $bag) {
     echo '</li>';
     echo '<br>';
     echo '<li>';
-    echo $bag['price'];
+    echo '£'.$bag['price'];
     echo '</li>';
     echo '<br>';
     echo '<li>';
