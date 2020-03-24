@@ -35,8 +35,8 @@ img {
     row-gap: 20px;
     margin: auto;
 }
-h2 {
-    margin: 0;
+.item{
+    font-family: 'Questrial', sans-serif;
 }
 div {
     margin: 0;
