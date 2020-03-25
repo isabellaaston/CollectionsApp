@@ -1,4 +1,9 @@
+<?php
+    require_once('getDbFunction.php');
+    require_once('getBagsFunction.php');
+    require_once('listBagsFunction.php');
 
+?>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="normalize.css">
@@ -18,11 +23,8 @@
         </nav>
     <main>
         <?php
-        require_once('getDbFunction.php');
         $db=getDb();
-        require_once('getBagsFunction.php');
         $bags=getBags($db);
-        require_once('listBagsFunction.php');
         $collection=listBags($bags);
         ?>
     </main>
