@@ -7,7 +7,6 @@
     <head>
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
         <title>My Collection</title>
     </head>

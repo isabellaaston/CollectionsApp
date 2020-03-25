@@ -19,23 +19,23 @@
         <form method ="post">
             <div>
                 <label>Brand: </label>
-                <input type="text" name="brand"/><br>
+                <input type="text" name="brand" required/><br>
             </div>
             <div>
                 <label>Model: </label>
-                <input type="text" name ="model"/><br>
+                <input type="text" name ="model" required/><br>
             </div>
             <div>
-                <label>Price: </label>
-                <input type="text" name ="price"/><br>
+                <label>Price (£): </label>
+                <input type="text" name ="price" required/><br>
             </div>
             <div>
-                <label>Materials: </label>
+                <label>Materials (optional): </label>
                 <input type="text" name ="materials"/><br>
             </div>
             <div>
                 <label>Image Address: </label>
-                <input type="text" name ="image address"/><br>
+                <input type="url" name ="image address" required/><br>
             </div>
             <input type ="submit" value="Add Bag"/>
         </form>
