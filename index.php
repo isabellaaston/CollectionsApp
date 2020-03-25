@@ -2,7 +2,6 @@
     require_once('getDbFunction.php');
     require_once('getBagsFunction.php');
     require_once('listBagsFunction.php');
-
 ?>
 <html lang="en">
     <head>
@@ -17,7 +16,7 @@
         <nav>
             <div class="navbar">
                 <a class="underline">Collection</a>
-                <a class="underline">Add Item</a>
+                <a class="underline" href="addBag.php">Add Item</a>
                 <!-- <a class="underline">Edit Item</a> -->
             </div>
         </nav>

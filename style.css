@@ -19,12 +19,15 @@ h1 {
     border-bottom: 5px solid #000000;
 }
 .navbar {
-    color: #000000;
-    font-size: 2em;
-    font-weight: bold;
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0 20px 0;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
 }
 .image {
     display: flex;
