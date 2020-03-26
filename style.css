@@ -12,10 +12,10 @@ h1 {
     font-weight: bold;
 }
 .underline {
-    border-bottom: 5px solid #FFFFFF;
+    border-bottom: 5px solid #000000;
     padding: 4px;
 }
-.underline:hover {
+.hover:hover {
     border-bottom: 5px solid #000000;
 }
 .navbar {
@@ -52,5 +52,5 @@ h2 {
     padding-left: 5%;
 }
 div {
-    margin: 0 0 10px 0;
+    margin: 0 0 40px 0;
 }
