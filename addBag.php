@@ -49,7 +49,7 @@
             $db =getDb();
             if (isset($_POST['submit'])){
                 if (checkImageUrl()) {
-                        if (checkEntries()) {
+                        if (checkEntries($_POST['brand'])) {
                             addBag ();
                         } else {
                             echo "Please fill in all required catergories";

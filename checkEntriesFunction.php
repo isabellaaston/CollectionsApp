@@ -1,4 +1,4 @@
 <?php
-     function checkEntries () : bool {
-        return !($_POST['brand'] == '' && $_POST['model'] == '' && $_POST['price']=='' && $_POST['materials'] ==''); 
+     function checkEntries (string $brand, string $model, int $price, string $materials) : bool {
+        return !($brand == '' || $model == '' || $price=='' || $materials ==''); 
      }
