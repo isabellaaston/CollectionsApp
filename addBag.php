@@ -1,6 +1,6 @@
 
 <?php
-    require_once ('getDbFunction.php');
+    require ('getDbFunction.php');
 ?>
 <html lang=en>
 <head>
@@ -53,11 +53,11 @@
             $price = intval($_POST['price']);
             $materials = $_POST['materials'];
             $image = $_POST['image'];
-
-            $query=$db->prepare ("INSERT INTO `Bags` (`brand`, `image`, `model`, `price`, `materials`)VALUES($brand, $image, $model, $price, $materials);");
-            var_dump ($price);
-            $query -> execute();
-            echo "Bag Added";
+            $query=$db->prepare ("INSERT INTO `Bags` (`brand`, `image`, `model`, `price`, `materials`)VALUES(?, ?, ?, ?, ?);");
+            $query -> execute([$brand, $image, $model, $price, $materials]);
+            echo "Bag Added";   
+        } else {
+            echo "Please fill in all required catergories";
         }
 
         ?>
