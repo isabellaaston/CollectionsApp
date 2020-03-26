@@ -1,9 +1,9 @@
 <?php
-require ('../checkEntriesFunction.php');
+require '../checkEntriesFunction.php';
 
 use PHPUnit\Framework\TestCase;
 
-class FunctionTest extends TestCase
+class checkEntriesTest extends TestCase
 
 {
     public function testSuccessCheckEntries()

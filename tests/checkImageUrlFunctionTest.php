@@ -1,9 +1,9 @@
 <?php
-require ('../checkImageUrlFunction.php');
+require '../checkImageUrlFunction.php';
 
 use PHPUnit\Framework\TestCase;
 
-class FunctionTest extends TestCase
+class checkImageUrltest extends TestCase
 
 {
     public function testSuccesscheckImageUrl()
@@ -19,7 +19,7 @@ class FunctionTest extends TestCase
         public function testFailurecheckImageUrl()
     {
         $expected= false;
-        $image = trim(htmlspecialchars($_POST['']));
+        $image = trim(htmlspecialchars(''));
         $image = filter_var($image, FILTER_VALIDATE_URL);
         $case= $image;
         $this->assertEquals($expected, $case);
