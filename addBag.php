@@ -49,8 +49,8 @@
             $db =getDb();
             if (isset($_POST['submit'])){
                 if (checkImageUrl()) {
-                        if (checkEntries($_POST['brand'])) {
-                            addBag ();
+                        if (checkEntries($_POST['brand'], $_POST['model'], $_POST['price'], $_POST['materials'], $_POST['image'])) {
+                            addBag ($db);
                         } else {
                             echo "Please fill in all required categories.";
                         }

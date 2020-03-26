@@ -1,5 +1,5 @@
 <?php
-function addBag () {
+function addBag (PDO $db) {
     $brand = $_POST['brand'];
     $model = $_POST['model'];
     $price = intval($_POST['price']);
