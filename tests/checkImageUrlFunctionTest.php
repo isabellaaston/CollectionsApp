@@ -27,7 +27,7 @@ class checkImageUrltest extends TestCase
     public function testMalformedcheckImageUrl()
     {
         $expected= false;
-        $image = trim(htmlspecialchars($_POST['hello']));
+        $image = trim(htmlspecialchars('hello'));
         $image = filter_var($image, FILTER_VALIDATE_URL);
         $case = $image;
         $this->assertEquals($expected, $case);
