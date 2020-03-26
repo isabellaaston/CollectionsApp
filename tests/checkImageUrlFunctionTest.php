@@ -9,22 +9,27 @@ class FunctionTest extends TestCase
     public function testSuccesscheckImageUrl()
     {
         $expected= true;
-        $case = checkEntries('dcdwcd','jendjendjwe',5,'vrvrvrv');
+        $image = trim(htmlspecialchars('https://cdn.shopify.com/s/files/1/0066/8817/8212/products/Box-and-Contents-Pink-Background_540x.jpg?v=1583769069'));
+        $case = filter_var($image, FILTER_VALIDATE_URL);
+        if($case !=false) {
+            $case = true;
+        } 
         $this->assertEquals($expected, $case);
     }
-    
-    public function testFailurecheckImageUrl()
+        public function testFailurecheckImageUrl()
     {
         $expected= false;
-        $case = checkEntries('','kfmkfkfm', 5,'vrvrvrv');
+        $image = trim(htmlspecialchars($_POST['']));
+        $image = filter_var($image, FILTER_VALIDATE_URL);
+        $case= $image;
         $this->assertEquals($expected, $case);
     }
-
     public function testMalformedcheckImageUrl()
     {
         $expected= false;
-        $case = checkEntries('',5, 5,'vrvrvrv');
+        $image = trim(htmlspecialchars($_POST['hello']));
+        $image = filter_var($image, FILTER_VALIDATE_URL);
+        $case = $image;
         $this->assertEquals($expected, $case);
     }
-    
 }
