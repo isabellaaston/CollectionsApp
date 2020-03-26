@@ -15,7 +15,7 @@
         <nav>
             <div class="navbar">
                 <a class="underline">Collection</a>
-                <a class="underline" href="addBag.php">Add Item</a>
+                <a class="hover" href="addBag.php">Add Item</a>
                 <!-- <a class="underline">Edit Item</a> -->
             </div>
         </nav>
