@@ -6,6 +6,7 @@ function addBag () {
     $materials = $_POST['materials'];
     $image = $_POST['image'];
     $query=$db->prepare ("INSERT INTO `Bags` (`brand`, `image`, `model`, `price`, `materials`)VALUES(?, ?, ?, ?, ?);");
+    $query -> bindParam
     $query -> execute([$brand, $image, $model, $price, $materials]);
     echo "Bag Added";
 }

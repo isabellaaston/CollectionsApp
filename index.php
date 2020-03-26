@@ -1,7 +1,7 @@
 <?php
-    require_once('getDbFunction.php');
-    require_once('getBagsFunction.php');
-    require_once('listBagsFunction.php');
+    require_once'getDbFunction.php';
+    require_once'getBagsFunction.php';
+    require_once'listBagsFunction.php';
 ?>
 <html lang="en">
     <head>
